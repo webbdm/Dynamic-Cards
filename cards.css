@@ -1,0 +1,13 @@
+body{
+
+	background: url("img/beach.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.main{
+
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
