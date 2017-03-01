@@ -1,24 +1,36 @@
 var textInput = document.getElementById('textInput');
-var button = document.getElementById('button');
+var createButton = document.getElementById('createButton');
 var cardholder = document.getElementById('cardholder');
+var counter = 0;
 // var textInput = e.value;
 
 
-
-
-
-button.addEventListener("click", function writeToDom(){
+function writeToDom(){
 	
-	var newCard="";
-	newCard += `<div class="cardBox">`
-	newCard += `<h1>${textInput.value}</h1>`
-	newCard += `<button class="button" id="delete">DELETE</button>`
-	newCard += `</div>`
-	cardHolder.innerHTML += newCard;
+		counter += 1
+		var newCard="";
+		newCard += `<div class="cardBox" id="${counter}">`
+		newCard += `<h1>${textInput.value}</h1>`
+		newCard += `<button class="deleteButton">DELETE</button>`
+		newCard += `</div>`
+		cardHolder.innerHTML += newCard;
+		textInput.value="";
 
-});
+}
 
 
-	
+
+createButton.addEventListener("click", writeToDom);
+
+document.body.addEventListener("click",function(event){
+
+	console.log(event);
+
+	if (event.target.className === "deleteButton"){
+		console.log(event.target.parentNode);
+		event.target.parentNode.remove();	
+	}
+
+});	
 
 
