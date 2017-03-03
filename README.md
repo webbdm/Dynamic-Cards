@@ -9,5 +9,5 @@
 - Ability to delete individual cards
 
 
-![Beach](https://github.com/webbdm/blog/blob/master/frogblog.png)
+![Beach](https://github.com/webbdm/Dynamic-Cards/blob/exercise/img/beach.jpg?raw=true)
 
