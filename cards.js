@@ -10,15 +10,14 @@ function writeToDom(){
 		counter += 1
 		var newCard="";
 		newCard += `<div class="cardBox" id="${counter}">`
-		newCard += `<h1>${textInput.value}</h1>`
+		newCard += `<h2>${textInput.value}</h2>`
+		newCard += `<img src="http://images.clipartpanda.com/crab-clip-art-crab7.png"><br>`
 		newCard += `<button class="deleteButton">DELETE</button>`
 		newCard += `</div>`
 		cardHolder.innerHTML += newCard;
 		textInput.value="";
 
 }
-
-
 
 createButton.addEventListener("click", writeToDom);
 
